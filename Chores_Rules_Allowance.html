@@ -19,9 +19,19 @@
         <li>Room is clean before we go to sleep</li>
     </ul>
     <h2>Chores</h2>
-        <input type="checkbox" name="chore1" value="bed"> Bed is made?<br>
-        <input type="checkbox" name="chore2" value="room"> Room is clean?<br>
-        <input type="checkbox" name="chore3" value="table"> Table is clean?<br>
-        <button>Submit</button>
+    <form method="POST" action="https://request-inspector.glitch.me">
+        <label for="chore1">
+            <input type="checkbox" id="chore1" name="chore1" value="bed"> Bed is made?<br>
+        </label>
+        <label for="chore2">
+            <input type="checkbox" id="chore2" name="chore2" value="room"> Room is clean?<br>
+        </label>
+        <label for="chore3">
+            <input type="checkbox" id="chore3" name="chore3" value="table"> Table is clean?<br>
+        </label>
+        <label for="calculate">
+            <button id="calculate">Calculate</button>
+        </label>
+    </form>
 </body>
 </html>
