@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Allowance Calculator</title>
+    <link rel="stylesheet" href="Chores_Rules_Stylesheet.css">
 </head>
 <body>
     <h1>Allowance Calculator</h1>
@@ -11,27 +12,167 @@
         Your allowance is $10 per week OR a trip to the Dollar Tree.
     </div>
     <h2>Rules</h2>
-    <ul>
+    <ol>
         <li>Finish your homework before Dad gets home</li>
         <li>No Yelling</li>
         <li>Clean up after yourself</li>
         <li>Bed is made before we leave for school</li>
         <li>Room is clean before we go to sleep</li>
-    </ul>
+    </ol>
     <h2>Chores</h2>
     <form method="POST" action="https://request-inspector.glitch.me">
-        <label for="chore1">
-            <input type="checkbox" id="chore1" name="chore1" value="bed"> Bed is made?<br>
-        </label>
-        <label for="chore2">
-            <input type="checkbox" id="chore2" name="chore2" value="room"> Room is clean?<br>
-        </label>
-        <label for="chore3">
-            <input type="checkbox" id="chore3" name="chore3" value="table"> Table is clean?<br>
-        </label>
-        <label for="calculate">
-            <button id="calculate">Calculate</button>
-        </label>
+        <div class="chorelist">
+            <table class="sunday">
+                <tr>
+                    <td>Sunday</td>
+                </tr>
+                <tr>
+                <label for="chore1">
+                    <td><input type="checkbox" id="chore1" name="chore1" value="bed"></td>
+                    <td>Bed is made?</td>
+                </label>
+                </tr>
+                <tr>
+                <label for="chore2">
+                    <td><input type="checkbox" id="chore2" name="chore2" value="room"></td>
+                    <td>Room is clean?</td>
+                </label>
+                <tr>
+                    <label for="chore3">
+                        <td><input type="checkbox" id="chore3" name="chore3" value="table"></td>
+                        <td>Table is clean?</td>
+                    </label>
+            </table>
+            <table id="monday">
+                <tr>
+                    <td>Monday</td>
+                </tr>
+                <tr>
+                    <label for="chore1">
+                        <td><input type="checkbox" id="chore1" name="chore1" value="bed"></td>
+                        <td>Bed is made?</td>
+                    </label>
+                </tr>
+                <tr>
+                    <label for="chore2">
+                        <td><input type="checkbox" id="chore2" name="chore2" value="room"></td>
+                        <td>Room is clean?</td>
+                    </label>
+                <tr>
+                    <label for="chore3">
+                        <td><input type="checkbox" id="chore3" name="chore3" value="table"></td>
+                        <td>Table is clean?</td>
+                    </label>
+            </table>
+            <table id="tuesday">
+                <tr>
+                    <td>Tuesday</td>
+                </tr>
+                <tr>
+                    <label for="chore1">
+                        <td><input type="checkbox" id="chore1" name="chore1" value="bed"></td>
+                        <td>Bed is made?</td>
+                    </label>
+                </tr>
+                <tr>
+                    <label for="chore2">
+                        <td><input type="checkbox" id="chore2" name="chore2" value="room"></td>
+                        <td>Room is clean?</td>
+                    </label>
+                <tr>
+                    <label for="chore3">
+                        <td><input type="checkbox" id="chore3" name="chore3" value="table"></td>
+                        <td>Table is clean?</td>
+                    </label>
+            </table>
+            <table id="wednesday">
+                <tr>
+                    <td>Wednesday</td>
+                </tr>
+                <tr>
+                    <label for="chore1">
+                        <td><input type="checkbox" id="chore1" name="chore1" value="bed"></td>
+                        <td>Bed is made?</td>
+                    </label>
+                </tr>
+                <tr>
+                    <label for="chore2">
+                        <td><input type="checkbox" id="chore2" name="chore2" value="room"></td>
+                        <td>Room is clean?</td>
+                    </label>
+                <tr>
+                    <label for="chore3">
+                        <td><input type="checkbox" id="chore3" name="chore3" value="table"></td>
+                        <td>Table is clean?</td>
+                    </label>
+            </table>
+            <table id="thursday">
+                <tr>
+                    <td>Thursday</td>
+                </tr>
+                <tr>
+                    <label for="chore1">
+                        <td><input type="checkbox" id="chore1" name="chore1" value="bed"></td>
+                        <td>Bed is made?</td>
+                    </label>
+                </tr>
+                <tr>
+                    <label for="chore2">
+                        <td><input type="checkbox" id="chore2" name="chore2" value="room"></td>
+                        <td>Room is clean?</td>
+                    </label>
+                <tr>
+                    <label for="chore3">
+                        <td><input type="checkbox" id="chore3" name="chore3" value="table"></td>
+                        <td>Table is clean?</td>
+                    </label>
+            </table>
+            <table id="friday">
+                <tr>
+                    <td>Friday</td>
+                </tr>
+                <tr>
+                    <label for="chore1">
+                        <td><input type="checkbox" id="chore1" name="chore1" value="bed"></td>
+                        <td>Bed is made?</td>
+                    </label>
+                </tr>
+                <tr>
+                    <label for="chore2">
+                        <td><input type="checkbox" id="chore2" name="chore2" value="room"></td>
+                        <td>Room is clean?</td>
+                    </label>
+                <tr>
+                    <label for="chore3">
+                        <td><input type="checkbox" id="chore3" name="chore3" value="table"></td>
+                        <td>Table is clean?</td>
+                    </label>
+            </table>
+                <table id="saturday">
+                    <tr>
+                        <td>Saturday</td>
+                    </tr>
+                    <tr>
+                        <label for="chore1">
+                            <td><input type="checkbox" id="chore1" name="chore1" value="bed"></td>
+                            <td>Bed is made?</td>
+                        </label>
+                    </tr>
+                    <tr>
+                        <label for="chore2">
+                            <td><input type="checkbox" id="chore2" name="chore2" value="room"></td>
+                            <td>Room is clean?</td>
+                        </label>
+                    <tr>
+                        <label for="chore3">
+                            <td><input type="checkbox" id="chore3" name="chore3" value="table"></td>
+                            <td>Table is clean?</td>
+                        </label>
+                </table>
+        </div>
+            <label for="calculate">
+                <button id="calculate">Calculate</button>
+            </label>
     </form>
 </body>
 </html>
