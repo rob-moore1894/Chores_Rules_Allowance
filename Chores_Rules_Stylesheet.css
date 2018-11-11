@@ -1,6 +1,7 @@
 * {
 
     box-sizing: border-box;
+    padding: 0;
 }
 
 body {
@@ -39,7 +40,8 @@ body {
 }
 
 td {
-    width: 75%;
+    width: 100%;
+    float: left;
 }
 
 table h3 {
@@ -47,5 +49,32 @@ table h3 {
     margin: 0;
 }
 
+ul {
+    display: inline-block;
+    width: 33%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.class {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.choreTitle {
+    margin-bottom: 8px;
+}
 
 
+.header {
+    margin-bottom: 16px;
+    text-align: center;
+}
