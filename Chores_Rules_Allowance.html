@@ -2,42 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Allowance Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="Chores_Rules_Stylesheet.css">
 </head>
 <body>
-    <script src="Chores_Rules_script.js"></script>
+
     <h1>Allowance Calculator</h1>
     <div class="header">
         In order for you to receive your allowance, you must follow all of the rules and complete all of your chores.
         Your allowance is $10 per week to be used during a trip to the Dollar Tree.
     </div>
     <hr>
-    <section class="rules">
-        <h2 class="listRules">Rules</h2>
-        <ul class="firstFive">
-            <li>No Tattle Telling</li>
-            <li>No Hitting!</li>
-            <li>No Yelling or Screaming!</li>
-            <li>No Whining!</li>
-            <li>No TV, tablet, or computer until homework is done</li>
-        </ul>
-        <ul class="secondFive">
-            <li>Bed is made before we leave for school</li>
-            <li>Put plates/cups in the sink</li>
-            <li>Always say "Yes sir/ma'am."</li>
-            <li>Finish chores before Dad gets home</li>
-            <li>No TV while you are eating</li>
-        </ul>
-        <ul class="thirdFive">
-            <li>Always pick up after yourself</li>
-            <li>Always help your sisters!</li>
-            <li>Always help your grandpa!</li>
-            <li>Room is clean before we go to sleep</li>
-            <li>NO ATTITUDE!</li>
-        </ul>
-        <hr>
-    </section>
+    <!--<section class="rules">-->
+        <!--<h2 class="listRules">Rules</h2>-->
+        <!--<ul class="firstFive">-->
+            <!--<li>No Tattle Telling</li>-->
+            <!--<li>No Hitting!</li>-->
+            <!--<li>No Yelling or Screaming!</li>-->
+            <!--<li>No Whining!</li>-->
+            <!--<li>No TV, tablet, or computer until homework is done</li>-->
+        <!--</ul>-->
+        <!--<ul class="secondFive">-->
+            <!--<li>Bed is made before we leave for school</li>-->
+            <!--<li>Put plates/cups in the sink</li>-->
+            <!--<li>Always say "Yes sir/ma'am."</li>-->
+            <!--<li>Finish chores before Dad gets home</li>-->
+            <!--<li>No TV while you are eating</li>-->
+        <!--</ul>-->
+        <!--<ul class="thirdFive">-->
+            <!--<li>Always pick up after yourself</li>-->
+            <!--<li>Always help your sisters!</li>-->
+            <!--<li>Always help your grandpa!</li>-->
+            <!--<li>Room is clean before we go to sleep</li>-->
+            <!--<li>NO ATTITUDE!</li>-->
+        <!--</ul>-->
+
+    <!--</section>-->
+    <div class="rules">
+        <div class="row">
+            <div class="column">No Tattle Telling</div>
+            <div class="column">No Hitting</div>
+            <div class="column">No Yelling or Screaming</div>
+            <div class="column">No Whining</div>
+            <div class="column">No TV, Tablet, or Computer until homework is done</div>
+        </div>
+        <div class="row">
+            <div class="column">Bed is made before we leave for school</div>
+            <div class="column">Put plates/cups in the sink</div>
+            <div class="column">Always say "Yes sir/ma'am."</div>
+            <div class="column">Finish chores before Dad gets home</div>
+            <div class="column">No electronics while eating</div>
+        </div>
+        <div class="row">
+            <div class="column">Always pick up after yourself</div>
+            <div class="column">Always help your sisters!</div>
+            <div class="column">Always help your grandpa!</div>
+            <div class="column">Room is clean before we go to sleep</div>
+        </div>
+        <div class="row">
+            <div class="column column-full">Have a good ATTITUDE!</div>
+        </div>
+    </div>
+    <hr>
     <h2 class="choreTitle">Chores</h2>
     <form method="POST" action="https://request-inspector.glitch.me">
         <div class="chorelist">
@@ -88,7 +116,7 @@
                     <td><h3>Wednesday</h3></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="chore1" value="bed">Bed is made?</td>
+                    <td><label for="chore1"><input type="checkbox" name="chore1" id="chore1" value="bed"></label>Bed is made?</td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="chore2" value="room">Room is clean?</td>
@@ -144,5 +172,10 @@
                 <button id="calculate">Calculate</button>
             </label>
     </form>
+    <script src="Chores_Rules_script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
