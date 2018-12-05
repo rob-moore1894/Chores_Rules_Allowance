@@ -34,10 +34,17 @@ ul {
 
 
 h1 {
+
     text-align: center;
     margin: 1em 0;
     background-color: white;
     opacity: 0.5;
+
+  text-align: center;
+  margin: 1em 0;
+  background-color: white;
+  opacity: 0.5;
+
 }
 
 h2 {
@@ -51,6 +58,7 @@ h2 {
 
 
 .header {
+
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -86,4 +94,14 @@ h2 {
 
 .card-deck {
     display: flex;
+
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
 }
