@@ -40,10 +40,12 @@ h1 {
     background-color: white;
     opacity: 0.5;
 
+
   text-align: center;
   margin: 1em 0;
   background-color: white;
   opacity: 0.5;
+
 
 }
 
@@ -103,5 +105,38 @@ h2 {
 .container {
   width: 80%;
   margin: 0 auto;
+    text-align: center;
 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.card-header {
+    width: 100%;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+}
+
+.container1 {
+    border: .25em solid gray;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.card-body > .choice{
+    background-color: transparent;
+    border: 1px solid gray;
+
+}
+
+.card-deck {
+    display: flex;
 }
