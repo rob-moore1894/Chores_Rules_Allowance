@@ -22,7 +22,7 @@
                     Child
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#laurelynnCard">Laurelynn</a>
+                    <a class="dropdown-item" href="file:///C:/Users/Rob/github/Chores_Rules_Allowance/child_page_1.html" target="_blank">Laurelynn</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#averieCard">Averie</a>
                     <div class="dropdown-divider"></div>
@@ -34,25 +34,20 @@
 </nav>
 <div class="container">
 
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/Chores_Rules_Stylesheet.css">
-
-    <title>Allowance Calculator</title>
-
-</head>
-<body>
-<div class="container">
-
     <h1>Allowance Calculator</h1>
     <div class="header">
         In order for you to receive your allowance, you must follow all of the rules and complete all of your chores.
         Your allowance is $10 per week to be used during a trip to the Dollar Tree.
     </div>
     <hr>
-    <section class="rules">
-        <h2 class="listRules">Rules</h2>
-        <ul class="firstFive">
+    <section class="rules card" >
+        <div class="rulesTitle card-header">Rules</div>
+        <div class="listOfRules card-body"></div>
+        <div id="addRule" class="card-footer">
+          <input id="rule" type="text" placeholder="Add a rule">
+          <button id="addRuleBtn">Add Rule</button>
+        </div>
+        <!-- <ul class="firstFive">
             <li>No Tattle Telling</li>
             <li>No Hitting!</li>
             <li>No Yelling or Screaming!</li>
@@ -72,7 +67,7 @@
             <li>Always help your grandpa!</li>
             <li>Room is clean before we go to sleep</li>
             <li>NO ATTITUDE!</li>
-        </ul>
+        </ul> -->
         <hr>
     </section>
 
@@ -80,68 +75,6 @@
     <h2 class="choreTitle">Chores</h2>
     <form method="POST" action="https://request-inspector.glitch.me">
 
-        <a name="laurelynnCard">
-            <div class="container1">
-                <div class="card-header">Laurelynn</div>
-                <div class="card-deck">
-                    <div class="card-body">
-                        <div class="card-header2">Sunday</div>
-                        <div class="card-body choice"><label for="lsChore1"><input type="checkbox" class="chore1" id="lsChore1"></label> Bed Made</div>
-                        <div class="card-body choice"><label for="lsChore2"><input type="checkbox" name="chore2" id="lsChore2"></label> Room Clean</div>
-                        <div class="card-body choice"><label for="lsChore3"><input type="checkbox" name="chore3" id="lsChore3"></label> Cat fed and watered</div>
-                        <div class="card-footer"><label for="ls"><input type="radio" class="parentVerified" id="ls" name="parentVerifiedls"></label> Adult Confirmed</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header2">Monday</div>
-                        <div class="card-body choice"><label for="lmChore1"><input type="checkbox" class="chore1" id="lmChore1"></label> Bed Made</div>
-                        <div class="card-body choice"><label for="lmChore2"><input type="checkbox" name="chore2" id="lmChore2"></label> Room Clean</div>
-                        <div class="card-body choice"><label for="lmChore3"><input type="checkbox" name="chore3" id="lmChore3"></label> Cat fed and watered</div>
-                        <div class="card-body choice"><label for="lmChore4"><input type="checkbox" name="chore3" id="lmChore4"></label> Kitchen Clean</div>
-                        <div class="card-footer"><label for="lm"><input type="radio" class="parentVerified" id="lm" name="parentVerifiedlm"></label> Adult Confirmed</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header2">Tuesday</div>
-                        <div class="card-body choice"><label for="ltChore1"><input type="checkbox" class="chore1" id="ltChore1"></label> Bed Made</div>
-                        <div class="card-body choice"><label for="ltChore2"><input type="checkbox" name="chore2" id="ltChore2"></label> Room Clean</div>
-                        <div class="card-body choice"><label for="ltChore3"><input type="checkbox" name="chore3" id="ltChore3"></label> Cat fed and watered</div>
-                        <div class="card-body choice"><label for="ltChore4"><input type="checkbox" name="chore3" id="ltChore4"></label> Dishes</div>
-                        <div class="card-footer"><label for="lt"><input type="radio" class="parentVerified" id="lt" name="parentVerifiedlt"></label> Adult Confirmed</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header2">Wednesday</div>
-                        <div class="card-body choice"><label for="lwChore1"><input type="checkbox" class="chore1" id="lwChore1"></label> Bed Made</div>
-                        <div class="card-body choice"><label for="lwChore2"><input type="checkbox" name="chore2" id="lwChore2"></label> Room Clean</div>
-                        <div class="card-body choice"><label for="lwChore3"><input type="checkbox" name="chore3" id="lwChore3"></label> Cat fed and watered</div>
-                        <div class="card-body choice"><label for="lwChore4"><input type="checkbox" name="chore4" id="lwChore4"></label> Living Room Clean</div>
-                        <div class="card-footer"><label for="lw"><input type="radio" class="parentVerified" id="lw" name="parentVerifiedlw"></label> Adult Confirmed</div>
-                    </div>
-                        <div class="card-body">
-                        <div class="card-header2">Thursday</div>
-                        <div class="card-body choice"><label for="lrChore1"><input type="checkbox" class="chore1" id="lrChore1"></label> Bed Made</div>
-                        <div class="card-body choice"><label for="lrChore2"><input type="checkbox" name="chore2" id="lrChore2"></label> Room Clean</div>
-                        <div class="card-body choice"><label for="lrChore3"><input type="checkbox" name="chore3" id="lrChore3"></label> Cat fed and watered</div>
-                        <div class="card-body choice"><label for="lrChore4"><input type="checkbox" name="chore4" id="lrChore4"></label> Clean Litter Box</div>
-                        <div class="card-footer"><label for="lr"><input type="radio" class="parentVerified" id="lr" name="parentVerifiedlr"></label> Adult Confirmed</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header2">Friday</div>
-                        <div class="card-body choice"><label for="lfChore1"><input type="checkbox" class="chore1" id="lfChore1"></label> Bed Made</div>
-                        <div class="card-body choice"><label for="lfChore2"><input type="checkbox" name="chore2" id="lfChore2"></label> Room Clean</div>
-                        <div class="card-body choice"><label for="lfChore3"><input type="checkbox" name="chore3" id="lfChore3"></label> Cat fed and watered</div>
-                        <div class="card-footer"><label for="lf"><input type="radio" class="parentVerified" id="lf" name="parentVerifiedlf"></label> Adult Confirmed</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-header2">Saturday</div>
-                        <div class="card-body choice"><label for="laChore1"><input type="checkbox" class="chore1" id="laChore1"></label> Bed Made</div>
-                        <div class="card-body choice"><label for="laChore2"><input type="checkbox" name="chore2" id="laChore2"></label> Room Clean</div>
-                        <div class="card-body choice"><label for="laChore3"><input type="checkbox" name="chore3" id="laChore3"></label> Cat fed and watered</div>
-                        <div class="card-body choice"><label for="laChore4"><input type="checkbox" name="chore4" id="laChore4"></label> Laundry</div>
-                        <div class="card-footer"><label for="la"><input type="radio" class="parentVerified" id="la" name="parentVerifiedla"></label> Adult Confirmed</div>
-                    </div>
-                </div>
-                <div class="card-footer"><button class="calculate">Calculate</button></div>
-            </div>
-        </a>
 
         <a name="averieCard">
             <div class="container1">
