@@ -22,32 +22,25 @@ $(document).ready(function(){
         {id: 19, name: "Clean Under Couches", child: "Blake", day: "Saturday"},
     ];
 
-    function renderChore(chore) {
-        var html = "<div id='coffee.id' class='card col-6 bg-light float-left text-capitalize animated flipInX'>";
+    chores.forEach(function(chore) {
         if (chore.child === "All"){
-            html += "<span class='all'>" + chore.name + "</span>" + " ";
-        } else if (chore.child === "Laurelynn"){
-            html += "<span class='laurelynn'>" + chore.name + "</span>" + " ";
-        } else {
-            html += "<span class='averie'>" + chore.name + "</span>" + " ";
+            $('#testContainer').append(`<div class="card-body choice"><input type="checkbox" class="chore1" id="lsChore1">${chore.name}</div>`);
+        } else if (chore.child === "Laurelynn") {
+            console.group("Lowee");
+            console.log(chore.name);
+            console.groupEnd();
+        } else if (chore.child === "Averie") {
+            console.group("Averie");
+            console.log(chore.name);
+            console.groupEnd();
+        } else if (chore.child === "Blake") {
+            console.group("Blake");
+            console.log(chore.name);
+            console.groupEnd();
         }
-        html += "<span class='blake'>" + chore.name + "</span>";
-        html += "</div>";
-
-        return html;
-    }
-
-    function renderChores(chores) {
-        var html = '';
-        chores.forEach(function (chore) {
-            html += renderChore(chore);
-        });
-
-        return html;
-    }
-
-    $('.calculate').click(function(){
-
     });
 
+    $('#lsChore1').click(function () {
+        var choreDone = false;
+    });
 });
