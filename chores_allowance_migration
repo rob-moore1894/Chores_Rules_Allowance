@@ -1,0 +1,23 @@
+USE chores_allowance_db;
+
+DROP TABLE IF EXISTS chores;
+DROP TABLE IF EXISTS child;
+
+CREATE TABLE child (
+  child_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(240) NOT NULL,
+  PRIMARY KEY (child_id)
+);
+
+CREATE TABLE chores (
+  chore_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  child_id INT UNSIGNED NOT NULL,
+  chore VARCHAR(240) NOT NULL,
+  day VARCHAR(240) NOT NULL,
+  PRIMARY KEY (chore_id),
+  FOREIGN KEY (child_id) REFERENCES child(child_id)
+);
+
+
+SELECT * FROM child
+JOIN chores ON child.child_id = chores.child_id;

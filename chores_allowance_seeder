@@ -1,0 +1,37 @@
+USE chores_allowance_db;
+
+INSERT INTO chores (child_id, chore, day)
+VALUES (1, "Feed and Water the Cat", "Everyday"),
+       (1,"Make Bed", "Everyday"),
+       (1,"Clean Room", "Everyday"),
+       (1, "Clean Kitchen", "Monday"),
+       (1, "Dishes", "Tuesday"),
+       (1, "Clean Living Room", "Wednesday"),
+       (1, "Clean Cat Litter Box", "Thursday"),
+       (1, "Laundry", "Saturday"),
+       (2,"Make Bed", "Everyday"),
+       (2,"Clean Room", "Everyday"),
+       (2, "Clean Table", "Monday"),
+       (2, "Recycling Bin Out and In", "Tuesday"),
+       (2, "Laundry", "Wednesday"),
+       (2, "Trash Bin In and Out", "Thursday"),
+       (2, "Sweep and Mop Kitchen and Dining Room", "Friday"),
+       (3,"Make Bed", "Everyday"),
+       (3,"Clean Room", "Everyday"),
+       (3, "Clean Bathroom Counters", "Monday"),
+       (3, "Clean Office", "Tuesday"),
+       (3, "Dust", "Wednesday"),
+       (3, "Laundry", "Thursday"),
+       (3, "Pick up All Toys", "Friday"),
+       (3, "Clean Under Couches", "Saturday");
+
+
+INSERT INTO child (name)
+VALUES ("Laurelynn"),
+       ("Averie"),
+       ("Blake");
+
+SELECT name, chore, day FROM chores
+JOIN child ON chores.child_id = child.child_id;
+
+
