@@ -31,7 +31,25 @@ VALUES ("Laurelynn"),
        ("Averie"),
        ("Blake");
 
+INSERT INTO rules (rule)
+VALUES ("No Tattle Telling"),
+       ("No Hitting!"),
+       ("No Yelling or Screaming!"),
+       ("No Whining!"),
+       ("No TV, tablet, or computer until homework is done"),
+       ("Bed is made before we leave for school"),
+       ("Put plates/cups in the sink"),
+       ("Always say \"Yes sir/ma'am.\""),
+       ("Finish chores before Dad gets home"),
+       ("No TV while you are eating"),
+       ("Always pick up after yourself"),
+       ("Always help your sisters!"),
+       ("Always help your grandpa!"),
+       ("Room is clean before we go to sleep"),
+       ("NO ATTITUDE!");
+
 SELECT name, chore, day FROM chores
 JOIN child ON chores.child_id = child.child_id;
 
+SELECT * FROM rules;
 

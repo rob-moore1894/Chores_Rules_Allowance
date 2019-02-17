@@ -2,6 +2,7 @@ USE chores_allowance_db;
 
 DROP TABLE IF EXISTS chores;
 DROP TABLE IF EXISTS child;
+DROP TABLE IF EXISTS rules;
 
 CREATE TABLE child (
   child_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -16,6 +17,12 @@ CREATE TABLE chores (
   day VARCHAR(240) NOT NULL,
   PRIMARY KEY (chore_id),
   FOREIGN KEY (child_id) REFERENCES child(child_id)
+);
+
+CREATE TABLE rules (
+  rule_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  rule TEXT,
+  PRIMARY KEY (rule_id)
 );
 
 

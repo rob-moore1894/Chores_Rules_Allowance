@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Child Page 1</title>
-    <link rel="stylesheet" href="css/Chores_Rules_Stylesheet.css">
-  </head>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html lang="en">
+<head>
+    <jsp:include page="/WEB-INF/partials/head.jsp">
+        <jsp:param name="title" value="Child" />
+    </jsp:include>
+</head>
   <body>
+<jsp:include page="/WEB-INF/partials/navbar.jsp" />
     <a name="laurelynnCard">
         <div class="container">
             <div class="card-header">Laurelynn</div>
