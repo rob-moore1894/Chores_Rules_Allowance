@@ -28,3 +28,7 @@ CREATE TABLE rules (
 
 SELECT * FROM child
 JOIN chores ON child.child_id = chores.child_id;
+
+
+
+select * from rules;

@@ -1,5 +1,7 @@
 package controllers;
 
+import dao.DaoFactory;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,6 +13,7 @@ import java.io.IOException;
 public class ChildPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("chores", DaoFactory.getChoresDao().all());
         request.getRequestDispatcher("/WEB-INF/ChildPage.jsp").forward(request, response);
     }
 }

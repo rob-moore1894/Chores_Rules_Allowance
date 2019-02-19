@@ -19,7 +19,7 @@ public class RulesDao implements Rules {
                     config.getPassword()
             );
         } catch (SQLException e) {
-            throw new RuntimeException("Error connecting to the database!", e);
+            throw new RuntimeException("Error connecting to the rules database table!", e);
         }
     }
 
@@ -28,24 +28,34 @@ public class RulesDao implements Rules {
         try {
             sql = connection.createStatement();
             ResultSet rs = sql.executeQuery("SELECT * FROM rules");
-                return createRulesListFromResults(rs);
+//            System.out.println(rs);
+            return createRulesListFromResults(rs);
         } catch (SQLException e) {
             throw new RuntimeException("Error retrieving rules", e);
         }
     }
 
-    private List<Rule> createRulesListFromResults(ResultSet rs) throws SQLException {
-        List<Rule> rules = new ArrayList<>();
-        while (rs.next()) {
-            rules.add(extractRule(rs));
-        }
-        return rules;
+    public List<Rule> createRulesListFromResults(ResultSet rs){
+        try {
+           List<Rule> rules = new ArrayList<>();
+           while (rs.next()) {
+               rules.add(extractRule(rs));
+           }
+           return rules;
+       } catch (SQLException  e) {
+           throw new RuntimeException("error creating rule list", e);
+       }
     }
 
-    private Rule extractRule(ResultSet rs) throws SQLException {
-        Rule addedRule = new Rule();
-        addedRule.setRule(rs.getString("rule"));
-        return addedRule;
+    public Rule extractRule(ResultSet rs){
+        try {
+        System.out.println("inside create rule object");
+            return new Rule(
+                    rs.getLong("rule_id"),
+                    rs.getString("rule"));
+        } catch (SQLException e){
+            throw new RuntimeException("error creating rule object", e);
+        }
     }
 
     @Override
